@@ -1,0 +1,22 @@
+body {
+	margin-top: 60px;
+	margin-left: 10px;
+}
+
+.product {
+	/*margin-top: 150px;*/
+	margin-bottom: 150px;
+}
+
+.name {
+	font-size: 200%;
+	font-weight: bold;
+
+}
+
+
+img {float: left;
+margin: 10px 10px 10px 10px;
+vertical-align: middle
+height: 15%;
+width: 15%;}

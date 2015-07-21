@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang ="en">
+<head><title>Nozama.com: Limited Inventory</title>
+  <script src="https://code.jquery.com/jquery-2.1.1.js" type="text/javascript"></script>
+
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+  <link rel="stylesheet" href="comstyle.css">
+</head>
+<header>
+  <nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#">Nozama.com</a>
+      </div>
+      <div>
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="#">Home</a></li>
+          <li><a href="books.html">Books</a></li>
+          <li><a href="music.html">Music</a></li> 
+          <li><a href="VHS.html">VHS</a></li> 
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
+
+
+<body>
+  <div id = "book1" class = "Science-Fiction product" align = 'left'>
+    <div class = "name"></div>
+    <img id = "chilend" class="img-responsive" src='' float: left >
+    <div class = "category"></div>
+    <div class = "price"></div>
+    <div class = "author"></div>
+    <div class = "description"></div>
+    <div class = "sellingPoints"></div>
+    <script>
+       // <!-- book information should be contained in an object -->
+       var book1 = {name: "Childhood's End", category: "Science-Fiction", price: 8.99, description: "Without warning, giant silver ships from deep space appear in the skies above every major city on Earth. Manned by the Overlords, in fifty years, they eliminate ignorance, disease, and poverty. Then this golden age ends--and then the age of Mankind begins....", picurl:"ChildhoodsEnd.jpg", sellingPoints:["Gets 35 MPG on the highway", "Articulates life lessons with brevity", "Doubles as a toaster", "You can brush your teeth with it."]}
+
+       $('#book1 .name').text(book1.name);
+       $('#book1 .category').text(book1.category);
+       $('#book1 .price').text(book1.price);
+       $('#book1 .description').text(book1.description);
+       $('#book1 #chilend').attr('src', book1.picurl);
+       $('#book1 .sellingPoints').text(book1.sellingPoints);
+
+    </script>
+
+
+
+  </div>
+
+  <div id = "book2" class = "Fiction product" align = "left">
+    <div class = "name"></div>
+    <img id = "sirtit" class="img-responsive" src='' float: left>
+    <div class = "category"></div>
+    <div class = "price"></div>
+    <div class = "author"></div>
+    <div class = "description"></div>
+    <div class = "sellingPoints"></div>
+    <script>
+       // <!-- book information should be contained in an object -->
+       var book2 = {name: "The Sirens of Titan", category: "Fiction", price: 9.99, description: "The richest, most depraved man on Earth, Malachi Constant, is offered a chance to take a space journey to distant worlds with a beautiful woman at his side. Of course there’s a catch to the invitation–and a prophetic vision about the purpose of human life that only Vonnegut has the courage to tell.", picurl: "TheSirensofTitan.jpg", sellingPoints:["Gets 35 MPG on the highway", "Articulates life lessons with brevity", "Doubles as a toaster", "You can brush your teeth with it."]}
+
+       $('#book2 .name').text(book2.name);
+       $('#book2 .category').text(book2.category);
+       $('#book2 .price').text(book2.price);
+       $('#book2 .description').text(book2.description);
+       $('#book2 #sirtit').attr('src', book2.picurl);
+       $('#book2 .sellingPoints').text(book2.sellingPoints);
+    </script>
+
+  </div> 
+
+  <div id = "book3" class = "Speculative-fiction product" align= "left">
+ 
+    <div class = "name"></div>
+    <div class = "category"></div>
+    <div class = "price"></div>
+    <div class = "author"></div>
+    <div class = "description"></div>
+    <div class = "sellingPoints"></div>
+    <img id = "neuro" class="img-responsive" src='' float: left width="202" height="300">
+    <script>
+       // <!-- book information should be contained in an object -->
+       var book3 = {name: "Neuromancer", category: "Speculative-Fiction", price: 9.99, description: "Case had been the sharpest data-thief in the business, until vengeful former employees crippled his nervous system. But now a new and very mysterious employer recruits him for a last-chance run. The target: an unthinkably powerful artificial intelligence orbiting Earth in service of the sinister Tessier-Ashpool business clan. With a dead man riding shotgun and Molly, mirror-eyed street-samurai, to watch his back, Case embarks on an adventure that ups the ante on an entire genre of fiction.", picurl: "Neuromancer.jpg", sellingPoints:["Gets 35 MPG on the highway", "Articulates life lessons with brevity", "Doubles as a toaster", "You can brush your teeth with it."]}
+
+       $('#book3 .name').text(book3.name);
+       $('#book3 .category').text(book3.category);
+       $('#book3 .price').text(book3.price);
+       $('#book3 .description').text(book3.description);
+       $('#book3 #neuro').attr('src', book3.picurl);
+       $('#book3 .sellingPoints').text(book3.sellingPoints);
+    </script>
+
+  </div> 
+
+    <div id = "ablum1" class = "Hip-Hop product">
+    <div class = "name"></div>
+    <img id = "myka9" class="img-responsive" src='' float: left>
+    <div class = "category"></div>
+    <div class = "price"></div>
+    <div class = "author"></div>
+    <div class = "description"></div>
+    <div class = "sellingPoints"></div>
+    <script>
+       // <!-- book information should be contained in an object -->
+       var album1 = {name: "1969", category: "Hip-Hop", price: 12.99, description: "Good shit from one of the founding members of Freestyle Fellowship.", picurl: "myka1969.jpg", sellingPoints:["Gets 35 MPG on the highway", "Articulates life lessons with brevity", "Doubles as a toaster", "You can brush your teeth with it."]}
+
+       $('#album1 .name').text(album1.name);
+       $('#album1 .price').text(album1.price);
+       $('#album1 .description').text(album1.description);
+       $('#album1 #myka9').attr('src', album1.picurl);
+       $('#album1 .sellingPoints').text(album1.sellingPoints);
+    </script>
+
+
+
+  </div>
+
+  <div id = "album2" class = "Electronic product">
+    <div class = "name"></div>
+    <div class = "category"></div>
+    <div class = "price"></div>
+    <div class = "author"></div>
+    <div class = "description"></div>
+    <div class = "sellingPoints"></div>
+    <img id = "muscene" class="img-responsive" src='' float: left>
+    <script>
+       // <!-- book information should be contained in an object -->
+       var album2 = {name: "The Music Scene", category: "Electronic", price: 12.99, description: "Former producer for Aesop Rock has done it again, nice cover art!", picurl: "MusicScene.jpg", sellingPoints:["Gets 35 MPG on the highway", "Articulates life lessons with brevity", "Doubles as a toaster", "You can brush your teeth with it."]}
+
+       $('#album2 .name').text(album2.name);
+       $('#album2 .price').text(album2.price);
+       $('#album2 .description').text(album2.description);
+       $('#album2 #muscene').attr('src', album2.picurl);
+       $('#album2 .sellingPoints').text(album2.sellingPoints);
+    </script>
+
+
+  </div> 
+
+  <div id = "album3" class = "Alternative product">
+ 
+    <div class = "name"></div>
+    <div class = "category"></div>
+    <div class = "price"></div>
+    <div class = "author"></div>
+    <div class = "description"></div>
+    <div class = "sellingPoints"></div>
+    <img id = "qotsa" class="img-responsive" src='' float: left width="202" height="300">
+    <script>
+       // <!-- book information should be contained in an object -->
+       var album3 = {name: "Like Clockwork . . .", category: "Speculative-Fiction", price: 12.99, description: "Just damn good music.", picurl: "qotsa.png", sellingPoints:["Gets 35 MPG on the highway", "Articulates life lessons with brevity", "Doubles as a toaster", "You can brush your teeth with it."]}
+
+       $('#album3 .name').text(album3.name);
+       $('#album3 .price').text(album3.price);
+       $('#album3 .description').text(album3.description);
+       $('#album3 #qotsa').attr('src', album3.picurl);
+       $('#album3 .sellingPoints').text(album3.sellingPoints);
+
+
+    </script>
+
+
+
+
+  </div> 
+
+</body>
+
+<footer><h2>Did you know that Amazon.com is the D3vil?</h2> 
+</footer>
+
+</html>
